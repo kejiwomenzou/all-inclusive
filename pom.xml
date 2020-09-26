@@ -12,6 +12,9 @@
     <url>http://www.github.com/kejiwomenzou</url>
     <modules>
         <module>in-action-java-core</module>
+        <module>in-action-algorithm</module>
+        <module>in-action-database</module>
+        <module>in-action-leetcode</module>
     </modules>
 
     <dependencies>

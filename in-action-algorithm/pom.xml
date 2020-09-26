@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>in-action-java-core</artifactId>
+    <artifactId>in-action-algorithm</artifactId>
 
-    <name>in-action-java-core</name>
+    <name>in-action-algorithm</name>
     <url>http://www.github.com/kejiwomenzou</url>
 
     <properties>
