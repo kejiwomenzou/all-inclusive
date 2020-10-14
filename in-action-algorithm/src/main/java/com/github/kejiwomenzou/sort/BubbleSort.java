@@ -1,13 +1,12 @@
 package com.github.kejiwomenzou.sort;
 
-import java.util.Arrays;
-
-import static com.github.kejiwomenzou.util.SortUtil.assertArr;
-import static com.github.kejiwomenzou.util.SortUtil.compareTo;
-import static com.github.kejiwomenzou.util.SortUtil.swap;
+import static com.github.kejiwomenzou.util.SortUtil.*;
 
 /**
- * @description: 冒泡排序
+ * @description: 冒泡排序：
+ *                  每一趟排序都是从0开始，依次两两比较，找出两两中最大（小）的往后面位置放，
+ *                  最终一趟排序比较下来会把最大（小）的元素交换到数组末尾，但一趟排序只能找
+ *                  到一个，因此需要arr.length-1趟排序（最坏情况下）来把所有元素就排序好
  * @auther: kejiwomenzou
  * @date: 2020/9/26
  * @version:
@@ -25,7 +24,6 @@ public class BubbleSort {
         assertArr(arr);
         //需要进行排序的次数，每执行一次排序比较交换出最大（最小）的数
         for (int i = 0; i < arr.length; i++) {
-
             //每次从数组第0个元素开始，选取两个元素两两比较，较大（或较小）的
             //数一直往后交换，直到最大（或最小）交换到数组末尾
             //每执行一次外层i循环，就会找出一趟中最大的数，内层两两比较次数就相应减少一次
@@ -71,8 +69,8 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr = {9,4,10,23,1,-2,0,5};
+        Integer[] arr = {101, 9,4,10,23,1,-2,0,5};
         bubbleSortExtend(arr);
-        System.out.println(Arrays.toString(arr));
+        printArr(arr);
     }
 }

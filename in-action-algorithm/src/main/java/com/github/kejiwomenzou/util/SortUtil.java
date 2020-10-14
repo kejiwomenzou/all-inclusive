@@ -1,5 +1,7 @@
 package com.github.kejiwomenzou.util;
 
+import java.util.Arrays;
+
 /**
  * @description:
  * @auther: kejiwomenzou
@@ -47,6 +49,15 @@ public class SortUtil {
         arr[i] = arr[i] ^ arr[j];
         arr[j] = arr[j] ^ arr[i];
         arr[i] = arr[i] ^ arr[j];
+    }
+
+    /**
+     * print T[]
+     * @param arr
+     * @param <T>
+     */
+    public static <T extends Comparable<T>> void printArr(T[] arr) {
+        System.out.println(Arrays.toString(arr));
     }
 
 }
